@@ -199,7 +199,7 @@ displayMessage(message); {
 
 
 
-        Toast.makeText(this, "Congrats" + text + " you got" + score + "out of 25 points" + message, Toast.LENGTH_LONG).show();
+        Toast.makeText(this, "Congrats " + text + " you got " + score + " out of 25 points " + message, Toast.LENGTH_LONG).show();
         name.setTextColor(getResources().getColor(R.color.MistyRose));
         answer1.setTextColor(getResources().getColor(R.color.SpringGreen));
         nosedive.setTextColor(getResources().getColor(R.color.SpringGreen));
@@ -219,10 +219,10 @@ displayMessage(message); {
 
         private String resultsummary(String name, int score, boolean realistic) {
             if (realistic) {
-                String message = "Congrats" + name + "you got" + score + "out of 25 points  and find such future realistic.";
+                String message = "Congrats " + name + " you got " + score + " out of 25 points  and find such future realistic.";
                 return message;
             } else {
-                String message = "You got" + score + "out of 25 points and find such future unrealistic.";
+                String message = "You got " + score + " out of 25 points and find such future unrealistic.";
                 return message;
             }
     }
