@@ -199,7 +199,7 @@ displayMessage(message); {
 
 
 
-        Toast.makeText(this, "Congrats " + text + " you got " + score + " out of 25 points " + message, Toast.LENGTH_LONG).show();
+        Toast.makeText(this, message, Toast.LENGTH_LONG).show();
         name.setTextColor(getResources().getColor(R.color.MistyRose));
         answer1.setTextColor(getResources().getColor(R.color.SpringGreen));
         nosedive.setTextColor(getResources().getColor(R.color.SpringGreen));
