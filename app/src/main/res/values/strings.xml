@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">UdacityGoogleChallenge3</string>
+    <string name="intro">Welcome to Black Mirror Quiz. How much do you know about the world you are going to live soon?</string>
+    <string name="username">Write your name here.</string>
+    <string name="Q1">1- Where does Black Mirror originates from?</string>
+    <string name="Q2">2- Which of those are among the main themes of Black Mirror?</string>
+    <string name="Germany">Germany</string>
+    <string name="UK">The UK</string>
+    <string name="France">France</string>
+    <string name="USA">The USA</string>
+    <string name="PersonelData">Personal Data</string>
+    <string name="SocialMedia">Social Media</string>
+    <string name="Animals">Animals</string>
+    <string name="VirtualReality">Virtual Reality</string>
+    <string name="Nosedive">Nosedive</string>
+    <string name="Arkangel">Arkangel</string>
+    <string name="BeRightBack">Be Right Back</string>
+    <string name="Playtest">Playtest</string>
+    <string name="Q3">3- Which is the Black Mirror episode that people rate each other?</string>
+    <string name="Q4">4- Do you think scenarios at Black Mirror are realistic?</string>
+    <string name="Yes">Yes</string>
+    <string name="No">No</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="ready_to_see_my_results">Ready to see my results</string>
+    <string name="start_again">Start again</string>
+    <string name="result">RESULT</string>
+
+</resources>
