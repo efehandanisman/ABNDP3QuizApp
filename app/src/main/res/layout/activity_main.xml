@@ -296,5 +296,15 @@
         android:layout_gravity="center"
         android:textColor="@color/Orange"
         android:textSize="@dimen/textSize20" />
+
+    <ImageButton
+        android:id="@+id/shareviawhatsapp"
+        android:src="@drawable/shareviawhatsapp"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:scaleType="fitCenter"
+        android:clickable="true"
+        android:onClick="onClickWhatsApp"
+        android:layout_gravity="center"/>
 </LinearLayout>
 </ScrollView>

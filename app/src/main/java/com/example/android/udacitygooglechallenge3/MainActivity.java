@@ -1,6 +1,9 @@
 package com.example.android.udacitygooglechallenge3;
 
 import android.content.DialogInterface;
+import android.content.Intent;
+import android.content.pm.PackageInfo;
+import android.content.pm.PackageManager;
 import android.provider.MediaStore;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
@@ -280,6 +283,8 @@ displayMessage(message); {
         result.setText(message);
     }
 
+
+
     public void resetQuiz(View v) {
         score=0;
         Checkboxsocialmedia.setChecked(false);
@@ -310,4 +315,27 @@ displayMessage(message); {
 
     }
 
+    public void onClickWhatsApp(View view) {
+
+        PackageManager pm=getPackageManager();
+        try {
+
+            Intent waIntent = new Intent(Intent.ACTION_SEND);
+            waIntent.setType("text/plain");
+            String text = resultsummary(name.getText().toString(), score, realistic);
+
+            PackageInfo info=pm.getPackageInfo("com.whatsapp", PackageManager.GET_META_DATA);
+            //Check if package exists or not. If not then code
+            //in catch block will be called
+            waIntent.setPackage("com.whatsapp");
+
+            waIntent.putExtra(Intent.EXTRA_TEXT, text);
+            startActivity(Intent.createChooser(waIntent, "Wanna play?"));
+
+        } catch (PackageManager.NameNotFoundException e) {
+            Toast.makeText(this, "WhatsApp not Installed", Toast.LENGTH_SHORT)
+                    .show();
+        }
+
+    }
 }
