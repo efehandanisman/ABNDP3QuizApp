@@ -11,10 +11,10 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:alpha="0.7"
-        android:paddingLeft="@dimen/dp15"
-        android:paddingRight="@dimen/dp10"
         android:background="@drawable/background"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/dp15"
+        android:paddingRight="@dimen/dp10">
 
         <TextView
             android:layout_width="wrap_content"
@@ -33,6 +33,26 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/marginTop30"
             android:hint="@string/username"
+            android:textColor="@color/Orange"
+            android:textColorHint="@color/Orange" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="@dimen/dp15"
+            android:text="@string/when_did_black_mirror_start"
+            android:textColor="@color/Orange"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/textq"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp15"
+            android:hint="@string/do_not_cheat"
             android:textColor="@color/Orange"
             android:textColorHint="@color/Orange" />
 
